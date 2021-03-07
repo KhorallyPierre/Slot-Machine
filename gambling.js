@@ -10,7 +10,7 @@ let money = 1000
 
 
 total.innerText = money
-outcome.innerText = "Win Big!"
+outcome.innerText = "Lets Steal Your Money! - Sincerely, Every Casino in the World"
 
 function risk(){
   return Math.ceil(Math.random() * 5)
@@ -31,7 +31,7 @@ function playSafe(){
   } else {
     money -= 5
     total.innerText = money
-    outcome.innerText = 'Try Again!'
+    outcome.innerText = 'you lost!'
   }
   img1.src = `slot${slot1}.png`
   img2.src = `slot${slot2}.png`
@@ -54,7 +54,7 @@ function playReckless(){
   } else {
     money -= 50
     total.innerText = money
-    outcome.innerText = 'Try Again!'
+    outcome.innerText = 'you lost!'
 
   }
   img1.src = `slot${slot1}.png`
